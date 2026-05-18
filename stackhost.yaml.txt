@@ -2,7 +2,7 @@
 # Version: 2.0.0
 
 user:
-  name: chandanpokemongo-web
+  name: chandananimeupdate-ctrl
   github: Alex Stack
 
 runtime:
