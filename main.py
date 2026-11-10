@@ -19,13 +19,8 @@ from telegram.ext import (ApplicationBuilder, CommandHandler, CallbackQueryHandl
                            ContextTypes, MessageHandler, filters)
 from telegram.error import BadRequest
 
-TOKEN = os.getenv("BOT_TOKEN", "8676998237:AAHOhapMythGy-9VE5EEUkYSTwQ_A2IhdAc")
-MONGO_URL = os.getenv("MONGO_URL", (
-    "mongodb://LAKSHMANLOVCHINNU:LAKSH_LUB_CHINNU@"
-    "ac-kpncihe-shard-00-00.yfyatwy.mongodb.net:27017,"
-    "ac-kpncihe-shard-00-01.yfyatwy.mongodb.net:27017,"
-    "ac-kpncihe-shard-00-02.yfyatwy.mongodb.net:27017/"
-    "?ssl=true&replicaSet=atlas-zftykc-shard-0&authSource=admin"
+TOKEN = os.getenv("BOT_TOKEN", "")
+MONGO_URL = os.getenv("MONGO_URL", (mongodb+srv://chandanpokemongo_db_user:channdannhebege3v4@cluster0.mbgbd7i.mongodb.net/
 ))
 _mongo_client  = AsyncIOMotorClient(MONGO_URL)
 _mongo_db      = _mongo_client["naruto_rpg"]
